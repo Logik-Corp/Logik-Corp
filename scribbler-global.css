@@ -1,16 +1,16 @@
 /* css variables*/
 :root {
-  --primary-color: #432E30;
-  --primary-color-light: #8E7474;
-  --accent-color: #FE6A6B;
-  --accent-color-light: #FFE4E4;
-  --accent-color-dark: #B94B4C;
+  --primary-color: #e7e7e7;
+  --primary-color-light: #FFFFFF;
+  --accent-color: #fec36a;
+  --accent-color-light: #ffe180;
+  --accent-color-dark: #b99c4b;
   --white-color: #FAFBFC;
   --light-gray-color: #C6CBD1;
   --medium-gray-color: #959DA5;
   --dark-gray-color: #444D56; 
-  --bg-color: #F8F8FA;
-  --code-bg-color: #F0E8E8;
+  --bg-color: rgb(20, 20, 20);
+  --code-bg-color: rgb(33, 33, 33);
 }
 
 /* normalized */
@@ -18,12 +18,13 @@ html, body {
   padding: 0;
   margin: 0;
   font-family: 'Nunito Sans', sans-serif;
-  background-color: white;
+  background-color: rgb(33, 33, 33);
+  color: white;
 }
 
 p {
   font-weight: 300;
-  color: #4A4A4A;
+  color: var(--light-gray-color);
 }
 
 a, a:hover {
@@ -39,6 +40,10 @@ hr {
 
 * {
   box-sizing: border-box;
+}
+
+#big__logo {
+  background: transparent;
 }
 
 /* global components */
@@ -197,7 +202,7 @@ nav {
   background: var(--primary-color);
   display: block;
   cursor: pointer;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s;
   right: 0;
 }
 
@@ -244,16 +249,16 @@ table {
 }
 
 table td, table th {
-  border: 1px solid var(--code-bg-color);
+  border: 1px solid var(--light-gray-color);
   padding: 0.8rem;
   font-weight: 300;
 }
 
 table th {
   text-align: left;
-  background-color: white;
+  background-color: rgb(33, 33, 33);
   border-color: white;
-  border-bottom-color: var(--code-bg-color);
+  border-bottom-color: var(--light-gray-color);
 }
 
 table td:first-child {
@@ -297,9 +302,9 @@ table td:first-child {
 
 .footer {
   text-align: center;
-  background-color: var(--primary-color);
+  background-color: var(--bg-color);
   padding: 2rem;
-  color: white;
+  color: var(--primary-color);
 }
 
 @keyframes fadeUp {

@@ -21,6 +21,8 @@ html, body {
   color: var(--primary-color);
   font-size: 1.4em;
   grid-column: 2;
+  cursor: pointer;
+  user-select: none;
 }
 
 .logo__thin {
@@ -64,14 +66,15 @@ html, body {
 }
 
 .doc__nav li:hover {
-  color: var(--primary-color-light);
+  color: var(--accent-color-light);
   cursor: pointer;
-  transition: color .3s ease-in-out;
+  transition: color .3s;
 }
 
 .doc__nav .selected {
   color: var(--accent-color);
   position: relative;
+  transition: color .3s;
 }
 
 .doc__nav .selected:after {
